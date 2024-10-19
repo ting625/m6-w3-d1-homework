@@ -5,6 +5,7 @@ import { Provider as ReduxProvider } from "react-redux";
 import DarkThemeProvider from "./DarkThemeProvider";
 import DarkThemeToggle from "./DarkThemeToggle";
 import store from "./redux/store";
+import './App.css';
 
 export const theme1 = theme("theme", {
   light: "#ffffff",
