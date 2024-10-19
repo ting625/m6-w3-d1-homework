@@ -27,6 +27,7 @@ const Container = styled.div`
   justify-content: center;
   font-family: sans-serif;
   background-color: ${theme1};
+  color: ${theme2};
   `;
 
 const SwitchTheme = styled.div`
@@ -35,6 +36,8 @@ const SwitchTheme = styled.div`
   justify-content: space-between;
   padding:0 50px;
   height: 75px;
+  background-color: ${(props) => (props.theme.theme === "dark" ? "#ffffff" : "#000000")}; /* White in dark mode, black in light mode */
+  color: ${(props) => (props.theme.theme === "dark" ? "#000000" : "#ffffff")}; /* Black text in dark mode, white text in light mode */
   `;
 
 const App = () => {
